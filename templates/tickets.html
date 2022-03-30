@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="color: #5e9ca0;">Hello, {{name}}</h1>
+		
+		<form action="/delete_ticket" method="DELETE">
+            <label for="id">Please enter ticket number to delete:</label><br />
+            <input id="id" name="id" type="text" value="" /><br />
+            <input type="submit" value="Delete" />
+		</form>
+
+		<h2 style="color: #2e6c80;">This is your tickets:</h2>
+		<table style="margin-left: 20px;">
+			<!-- Table headers -->
+			<th>
+				<tr style="color: green; ">    
+				<td>Ticket Id</td>
+				<td>Flight id</td>
+				<td>Date</td>
+		</tr>
+			</th>
+			
+		<!-- For loop logic of jinja template -->
+		{%for i in range(0, len)%}
+		<!-- table rows -->
+		<tr>
+			<td>{{source[i][0]}}</td>
+			<td>{{source[i][1]}}</td>
+			<td>{{source[i][2]}}</td>
+		{%endfor%}		
+		</tr>
+
+		<p><a href="http://127.0.0.1:5000/system">Back</a></p>
+    </body>
+</html>
