@@ -1,8 +1,8 @@
 # flaskproject
 
 main.py - main file to run + flask web server  
-cladd_db.py - classes  
-functions.py - functions  
+class_db.py - classes exsternal file  
+functions.py - functions external file  
   
 static/data.db - DB filled while working\testing the project  
 for NEW DB:   
