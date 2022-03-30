@@ -12,3 +12,6 @@ sql_query.txt - SQL query to fill DB with test data
 main.log - log file filled with testing\working data  
   
 templates/ - directory with HTML files for GUI interface   
+
+FLASK operating in: 
+http://127.0.0.1:5000
